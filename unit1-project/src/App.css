@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url('./assets/Lawn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
