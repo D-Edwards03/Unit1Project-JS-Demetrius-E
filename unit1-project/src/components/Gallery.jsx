@@ -7,7 +7,7 @@ import Landscape5 from "../assets/Landscape5.jpg";
 import Landscape6 from "../assets/Landscape6.jpg";
 import Landscape7 from "../assets/Landscape7.jpg";
 import Landscape8 from "../assets/Landscape8.jpg";
-//import "../stylesheets/Gallery.css";
+import "../stylesheets/Gallery.css";
 
 function Gallery () {
     const images = [Landscape1, Landscape2, Landscape3, Landscape4, Landscape5, Landscape6, Landscape7, Landscape8]
@@ -15,7 +15,7 @@ function Gallery () {
     return (
         <section className="gallery">
             <h3>This Could Be Your Lawn</h3>
-            <div className="gallerygrid">
+            <div className="galleryContainer">
                 {images.map((src, index) => (
                     <img key={index} src={src} alt={`Landscape ${index + 1}`} />
                 ))}
