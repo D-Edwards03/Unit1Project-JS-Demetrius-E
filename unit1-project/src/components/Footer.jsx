@@ -8,12 +8,16 @@ import { faInstagram, faFacebookF, faTiktok } from '@fortawesome/free-brands-svg
 function Footer () {
     return (
         <footer className="footer">
-            <p>&copy; 2025 Your Lawn Guy</p>
             <div className="socials">
-                <FontAwesomeIcon icon={faFacebookF} beatFade size="2x" />
-                <FontAwesomeIcon icon={faInstagram} beatFade size="2x" />
-                <FontAwesomeIcon icon={faTiktok} beatFade size="2x" />
+                <a href="https://www.facebook.com/profile.php?id=100083664626281"
+                target="_blank"
+                rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFacebookF} beatFade size="3x" />
+                </a>
+                <FontAwesomeIcon icon={faInstagram} beatFade size="3x" />
+                <FontAwesomeIcon icon={faTiktok} beatFade size="3x" />
             </div>
+            <p>&copy; 2025 Your Lawn Guy</p>
         </footer>
     )
 }

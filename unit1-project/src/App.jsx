@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -14,7 +14,7 @@ function App() {
   return (
       <div className='App'>
         <Router>
-          <Navbar />
+          <Header />
           <main>
             <Routes>
               <Route path='/' element={<Home />} />
