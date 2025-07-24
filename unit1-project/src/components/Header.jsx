@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MyButton from "./MyButton";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,16 +17,16 @@ function Header() {
         </div>
         <ul className={`navlinks ${isOpen ? "open" : ""}`}>
           <li>
-            <button onClick={() => navigate("/")}>Home</button>
+            <MyButton label="Home" onClick={() => navigate("/")} />
           </li>
           <li>
-            <button onClick={() => navigate("/about")}>About</button>
+            <MyButton label="About" onClick={() => navigate("/about")} />
           </li>
           <li>
-            <button onClick={() => navigate("/reviews")}>Reviews</button>
+            <MyButton label="Reviews" onClick={() => navigate("/reviews")} />
           </li>
           <li>
-            <button onClick={() => navigate("/contact")}>Contact</button>
+            <MyButton label="Contact" onClick={() => navigate("/contact")} />
           </li>
         </ul>
       </nav>
