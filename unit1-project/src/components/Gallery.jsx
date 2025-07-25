@@ -9,19 +9,28 @@ import Landscape7 from "../assets/Landscape7.jpg";
 import Landscape8 from "../assets/Landscape8.jpg";
 import "../stylesheets/Gallery.css";
 
-function Gallery () {
-    const images = [Landscape1, Landscape2, Landscape3, Landscape4, Landscape5, Landscape6, Landscape7, Landscape8]
+function Gallery() {
+  const images = [
+    Landscape1,
+    Landscape2,
+    Landscape3,
+    Landscape4,
+    Landscape5,
+    Landscape6,
+    Landscape7,
+    Landscape8,
+  ];
 
-    return (
-        <section className="gallery">
-            <h3>This Could Be Your Lawn</h3>
-            <div className="galleryContainer">
-                {images.map((src, index) => (
-                    <img key={index} src={src} alt={`Landscape ${index + 1}`} />
-                ))}
-            </div>
-        </section>
-    );
+  return (
+    <section className="gallery">
+      <h3>This Could Be Your Lawn</h3>
+      <div className="galleryContainer">
+        {images.map((src, index) => (
+          <img key={index} src={src} alt={`Landscape ${index + 1}`} />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Gallery;
